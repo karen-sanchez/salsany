@@ -1,11 +1,11 @@
 
 /* Custom css for calendar */
 .fc-toolbar.fc-header-toolbar {
-	background: var(--background-blue);
+	background: var(--color-blue);
 	color: white;
 }
 .fc-view.fc-month-view.fc-basic-view {
-	background: var(--background-gray-lt);
+	background: var(--color-gray-lt);
 }
 #calendar .fc-toolbar.fc-header-toolbar {
 	margin-bottom: 0;
@@ -17,8 +17,27 @@
     text-shadow: none;
 }
 .fc-time {
-	color: #b5e4e8;
+	color: var(--color-blue-lt);
 }
 .fc-content {
 	font-size: 12px;
+}
+
+
+/* Cancelled event */
+a.cancelled.fc-day-grid-event.fc-h-event.fc-event {
+	background-color: black
+}
+a.cancelled .fc-time,
+a.cancelled .fc-content {
+	color: gray;
+}
+a.cancelled.fc-day-grid-event.fc-h-event.fc-event::after {
+    content: 'cancelled';
+    text-transform: uppercase;
+    color: var(--color-yellow-lt);
+    display: block;
+    padding-left: 20px;
+    font-size: 11px;
+    font-weight: bold;
 }

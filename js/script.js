@@ -106,6 +106,13 @@ $(document).ready(function() {
 					end  : '2018-09-03T19:04:00',
 					url: 'http://newyorksalsacongress.com/'
 				},
+				{
+					title  : 'Candela Fridays NYC @ Dancesport Studios.',
+					start  : '2018-08-31T20:30:00',
+					end  : '2018-09-01T19:04:00',
+					url: 'http://www.salsanewyork.com/events/candela-fridays-at-dancesport.htm',
+					cancelled: true
+				},
 			];
 
 	$('#calendar').fullCalendar({
@@ -125,6 +132,11 @@ $(document).ready(function() {
 			      window.open(event.url);
 			      return false;
 			    }
-			  }
+			},
+			eventRender: function(event, $el) {
+				if (event.cancelled) {
+					$el.addClass("cancelled");	
+				}
+		    }
 	});
 });
