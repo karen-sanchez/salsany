@@ -16,3 +16,9 @@
     background: none;
     text-shadow: none;
 }
+.fc-time {
+	color: #b5e4e8;
+}
+.fc-content {
+	font-size: 12px;
+}

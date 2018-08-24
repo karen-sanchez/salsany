@@ -36,7 +36,77 @@ $(document).ready(function() {
 					start  : '2018-08-25T17:00:00',
 					end  : '2018-08-25T19:00:00'
 				},
-			]
+			];
+
+	let thuFriSatSun = [
+				// Thursday
+				{
+					title  : 'Summer outdoor salsa @ Downtown Brooklyn.',
+					start  : '2018-08-30T17:00:00',
+					end  : '2018-08-30T19:30:00',
+					url: 'https://www.facebook.com/events/213622669463786/'
+				},
+				{
+					title  : 'Summer outdoor salsa @ Downtown Brooklyn.',
+					start  : '2018-09-06T17:00:00',
+					end  : '2018-09-06T19:30:00',
+					url: 'https://www.facebook.com/events/213622669463786/'
+				},
+				{
+					title  : 'Summer outdoor salsa @ Downtown Brooklyn.',
+					start  : '2018-09-13T17:00:00',
+					end  : '2018-09-13T19:30:00',
+					url: 'https://www.facebook.com/events/213622669463786/'
+				},
+				{
+					title  : 'Summer outdoor salsa @ Downtown Brooklyn.',
+					start  : '2018-09-20T17:00:00',
+					end  : '2018-09-20T19:30:00',
+					url: 'https://www.facebook.com/events/213622669463786/'
+				},
+				{
+					title  : 'Summer outdoor salsa @ Downtown Brooklyn.',
+					start  : '2018-09-27T17:00:00',
+					end  : '2018-09-27T19:30:00',
+					url: 'https://www.facebook.com/events/213622669463786/'
+				},
+				{
+					title  : 'Tumbao Thursdays @ Yayo\'s.',
+					start  : '2018-08-30T21:00:00',
+					end  : '2018-08-31T01:00:00',
+					url: 'http://www.salsanewyork.com/events/tumbao-thursdays-at-yayo\'s.htm/'
+				},
+				{
+					title  : 'Tumbao Thursdays @ Yayo\'s.',
+					start  : '2018-09-06T21:00:00',
+					end  : '2018-09-07T01:00:00',
+					url: 'http://www.salsanewyork.com/events/tumbao-thursdays-at-yayo\'s.htm'
+				},
+				{
+					title  : 'Tumbao Thursdays @ Yayo\'s.',
+					start  : '2018-09-13T21:00:00',
+					end  : '2018-09-14T01:00:00',
+					url: 'http://www.salsanewyork.com/events/tumbao-thursdays-at-yayo\'s.htm'
+				},
+				{
+					title  : 'Tumbao Thursdays @ Yayo\'s.',
+					start  : '2018-09-20T21:00:00',
+					end  : '2018-09-21T01:00:00',
+					url: 'http://www.salsanewyork.com/events/tumbao-thursdays-at-yayo\'s.htm'
+				},
+				{
+					title  : 'Tumbao Thursdays @ Yayo\'s.',
+					start  : '2018-09-27T21:00:00',
+					end  : '2018-09-28T01:00:00',
+					url: 'http://www.salsanewyork.com/events/tumbao-thursdays-at-yayo\'s.htm'
+				},
+				{
+					title  : 'New York International Salsa Congress.',
+					start  : '2018-08-30T21:00:00',
+					end  : '2018-09-03T19:04:00',
+					url: 'http://newyorksalsacongress.com/'
+				},
+			];
 
 	$('#calendar').fullCalendar({
 			header: {
@@ -48,6 +118,13 @@ $(document).ready(function() {
 				listWeek: 'list week',
 				listDay: 'list day'
 			},
-			events: allEvents
+			//events: allEvents
+			events: thuFriSatSun,
+			eventClick: function(event) {
+			    if (event.url) {
+			      window.open(event.url);
+			      return false;
+			    }
+			  }
 	});
 });
