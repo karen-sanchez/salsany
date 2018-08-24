@@ -1,7 +1,19 @@
+/* Fonts */
+body {
+	font-family: var(--default-font);
+}
+@font-face {
+    font-family: "Hobo";
+    src: url("../fonts/HoboStd.woff") format("woff")
+}
+.sny-font-hobo {
+	font-family: "Hobo";
+}
+
+/* Components */
+.sny-logo {
+	margin: 5px auto;
+}
 .suggestion-box .card.mb-4.shadow-sm {
 	padding: 3em;
-}
-/*Full Calendar plugin*/
-.fc-day-grid-event .fc-content {
-	white-space: pre-wrap !important; /*expands event on month view*/
 }

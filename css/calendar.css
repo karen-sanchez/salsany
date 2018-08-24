@@ -1,0 +1,18 @@
+
+/* Custom css for calendar */
+.fc-toolbar.fc-header-toolbar {
+	background: var(--background-blue);
+	color: white;
+}
+.fc-view.fc-month-view.fc-basic-view {
+	background: var(--background-gray-lt);
+}
+#calendar .fc-toolbar.fc-header-toolbar {
+	margin-bottom: 0;
+}
+.fc-header-toolbar .fc-button {
+	color: white;
+    border: 0;
+    background: none;
+    text-shadow: none;
+}
