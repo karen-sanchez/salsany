@@ -42,7 +42,11 @@ $(document).ready(function() {
 			header: {
 				left: 'today prev',
 				center: 'title',
-				right: 'next month,agendaWeek,agendaDay'
+				right: $(window).width() < 765 ? 'next month,listWeek,listDay':'next month,agendaWeek,agendaDay'
+			},
+			buttonText: {
+				listWeek: 'list week',
+				listDay: 'list day'
 			},
 			events: allEvents
 	});
