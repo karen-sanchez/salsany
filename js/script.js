@@ -103,13 +103,31 @@ $(document).ready(function() {
 				{
 					title  : 'New York International Salsa Congress.',
 					start  : '2018-08-30T21:00:00',
-					end  : '2018-09-03T19:04:00',
+					end  : '2018-08-31T04:00:00',
+					url: 'http://newyorksalsacongress.com/'
+				},
+				{
+					title  : 'New York International Salsa Congress.',
+					start  : '2018-08-31T21:00:00',
+					end  : '2018-09-01T04:00:00',
+					url: 'http://newyorksalsacongress.com/'
+				},
+				{
+					title  : 'New York International Salsa Congress.',
+					start  : '2018-09-01T21:00:00',
+					end  : '2018-09-02T04:00:00',
+					url: 'http://newyorksalsacongress.com/'
+				},
+				{
+					title  : 'New York International Salsa Congress.',
+					start  : '2018-09-02T21:00:00',
+					end  : '2018-09-03T04:00:00',
 					url: 'http://newyorksalsacongress.com/'
 				},
 				{
 					title  : 'Candela Fridays NYC @ Dancesport Studios.',
 					start  : '2018-08-31T20:30:00',
-					end  : '2018-09-01T19:04:00',
+					end  : '2018-09-01T04:00:00',
 					url: 'http://www.salsanewyork.com/events/candela-fridays-at-dancesport.htm',
 					cancelled: true
 				},
@@ -137,6 +155,10 @@ $(document).ready(function() {
 				if (event.cancelled) {
 					$el.addClass("cancelled");	
 				}
+		    },
+		     eventAfterAllRender: function(){
+		        $("#calendar").fadeIn("slow");
+		        console.log("done");
 		    }
 	});
 });
