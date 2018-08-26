@@ -1,7 +1,9 @@
 /* Vars */
 :root {
 	--default-font: 'Montserrat', sans-serif;
-	--background-blue: #222e77;
-	--background-gray: #fafafa;
-	--background-gray-lt: #f6f9fa;
+	--color-blue: #222e77;
+	--color-blue-lt: #b5e4e8;
+	--color-gray: #fafafa;
+	--color-gray-lt: #f6f9fa;
+	--color-yellow-lt: #fcf8e3;
 }
