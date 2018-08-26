@@ -131,6 +131,103 @@ $(document).ready(function() {
 					url: 'http://www.salsanewyork.com/events/candela-fridays-at-dancesport.htm',
 					cancelled: true
 				},
+				{
+					title  : 'Candela Fridays NYC @ Dancesport Studios.',
+					start  : '2018-09-07T20:30:00',
+					end  : '2018-09-08T04:00:00',
+					url: 'http://www.salsanewyork.com/events/candela-fridays-at-dancesport.htm',
+				},
+				{
+					title  : 'Candela Fridays NYC @ Dancesport Studios.',
+					start  : '2018-09-21T20:30:00',
+					end  : '2018-09-22T04:00:00',
+					url: 'http://www.salsanewyork.com/events/candela-fridays-at-dancesport.htm',
+				},
+				{
+					title  : 'Lorenz Dance Studio Mambo Social.',
+					start  : '2018-08-31T21:00:00',
+					end  : '2018-08-31T24:00:00',
+					url: 'http://www.salsanewyork.com/events/lorenz-dance-studio-mambo-social.htm'
+				},
+				{
+					title  : 'Lorenz Dance Studio Mambo Social.',
+					start  : '2018-09-07T21:00:00',
+					end  : '2018-08-07T24:00:00',
+					url: 'http://www.salsanewyork.com/events/lorenz-dance-studio-mambo-social.htm'
+				},
+				{
+					title  : 'Lorenz Dance Studio Mambo Social.',
+					start  : '2018-09-14T21:00:00',
+					end  : '2018-09-31T24:00:00',
+					url: 'http://www.salsanewyork.com/events/lorenz-dance-studio-mambo-social.htm'
+				},
+				{
+					title  : 'Lorenz Dance Studio Mambo Social.',
+					start  : '2018-09-21T21:00:00',
+					end  : '2018-09-21T24:00:00',
+					url: 'http://www.salsanewyork.com/events/lorenz-dance-studio-mambo-social.htm'
+				},
+				{
+					title  : 'Lorenz Dance Studio Mambo Social.',
+					start  : '2018-09-28T21:00:00',
+					end  : '2018-09-28T24:00:00',
+					url: 'http://www.salsanewyork.com/events/lorenz-dance-studio-mambo-social.htm'
+				},
+				{
+					title  : 'Club Deportivo Salsa Fridays.',
+					start  : '2018-08-31T24:00:00',
+					end  : '2018-09-01T04:00:00',
+					url: 'http://www.salsanewyork.com/events/lorenz-dance-studio-mambo-social.htm'
+				},
+				{
+					title  : 'Club Deportivo Salsa Fridays.',
+					start  : '2018-09-07T24:00:00',
+					end  : '2018-09-08T04:00:00',
+					url: 'http://www.salsanewyork.com/events/lorenz-dance-studio-mambo-social.htm'
+				},
+				{
+					title  : 'Club Deportivo Salsa Fridays.',
+					start  : '2018-09-14T24:00:00',
+					end  : '2018-09-15T04:00:00',
+					url: 'http://www.salsanewyork.com/events/lorenz-dance-studio-mambo-social.htm'
+				},
+				{
+					title  : 'Club Deportivo Salsa Fridays.',
+					start  : '2018-09-21T24:00:00',
+					end  : '2018-09-22T04:00:00',
+					url: 'http://www.salsanewyork.com/events/lorenz-dance-studio-mambo-social.htm'
+				},
+				{
+					title  : 'Club Deportivo Salsa Fridays.',
+					start  : '2018-09-28T24:00:00',
+					end  : '2018-09-29T04:00:00',
+					url: 'http://www.salsanewyork.com/events/lorenz-dance-studio-mambo-social.htm'
+				},
+				{
+					title  : 'Salsa Salsa Dance Studio Social @ The Cherry Tree.',
+					start  : '2018-08-31T21:00:00',
+					end  : '2018-09-01T02:00:00',
+					url: 'http://www.salsanewyork.com/events/salsa-salsa-dance-studio-socials.htm'
+				},
+				{
+					title  : 'Salsa Salsa Dance Studio Social @ The Cherry Tree.',
+					start  : '2018-09-07T21:00:00',
+					end  : '2018-09-08T02:00:00',
+					url: 'http://www.salsanewyork.com/events/salsa-salsa-dance-studio-socials.htm'
+				},
+				{
+					title  : 'Salsa Salsa Dance Studio Social @ The Cherry Tree.',
+					start  : '2018-09-21T21:00:00',
+					end  : '2018-09-22T02:00:00',
+					url: 'http://www.salsanewyork.com/events/salsa-salsa-dance-studio-socials.htm'
+				},
+				{
+					title  : 'Nieves Latin Dance Studio Brooklyn Salsa.',
+					start  : '2018-08-31T21:00:00',
+					end  : '2018-08-31T24:00:00',
+					url: 'http://www.salsanewyork.com/events/nieves-social.htm',
+					cancelled: true
+				},
 			];
 
 	$('#calendar').fullCalendar({
