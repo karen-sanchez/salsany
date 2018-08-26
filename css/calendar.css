@@ -25,14 +25,14 @@
 
 
 /* Cancelled event */
-a.cancelled.fc-day-grid-event.fc-h-event.fc-event {
-	background-color: black
-}
 a.cancelled .fc-time,
 a.cancelled .fc-content {
 	color: gray;
 }
-a.cancelled.fc-day-grid-event.fc-h-event.fc-event::after {
+a.cancelled.fc-event  {
+	background-color: black
+}
+a.cancelled.fc-event::after {
     content: 'cancelled';
     text-transform: uppercase;
     color: var(--color-yellow-lt);
