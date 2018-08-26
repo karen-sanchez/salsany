@@ -1,44 +1,85 @@
 $(document).ready(function() {
 
 	let allEvents = [
+				// Mon - Wed
 				{
-					title  : 'Sunset salsa with Talia @ pier 45 greenwich village',
-					start  : '2018-08-21T18:30:00',
-					end  : '2018-08-21T21:00:00'
+					title  : 'Orchard Beach Salsa Monday',
+					start  : '2018-09-03T13:00:00',
+					end  : '2018-09-03T17:00:00',
+					url: 'http://www.salsanewyork.com/events/orchard-beach-salsa-sundays.htm'
 				},
 				{
-					title  : 'Salsa on 2\'sdays - Rooftop party @ the Copacabana' ,
-					start  : '2018-08-21T21:00:00',
-					end  : '2018-08-21T02:00:00'
+					title  : 'Latin Mondays @ Taj' ,
+					start  : '2018-09-03T17:00:00',
+					end  : '2018-09-04T01:00:00',
+					url: 'http://www.salsanewyork.com/public/events/latin-mondays-at-taj.htm'
 				},
 				{
-					title  : 'Midtown salsa @ plaza 33',
-					start  : '2018-08-22T14:00:00',
-					end  : '2018-08-22T26:00:00'
+					title  : 'Latin Mondays @ Taj' ,
+					start  : '2018-09-10T17:00:00',
+					end  : '2018-09-11T01:00:00',
+					url: 'http://www.salsanewyork.com/public/events/latin-mondays-at-taj.htm'
+				},
+				{
+					title  : 'Latin Mondays @ Taj' ,
+					start  : '2018-09-17T17:00:00',
+					end  : '2018-09-18T01:00:00',
+					url: 'http://www.salsanewyork.com/public/events/latin-mondays-at-taj.htm'
+				},
+				{
+					title  : 'Latin Mondays @ Taj' ,
+					start  : '2018-09-24T17:00:00',
+					end  : '2018-09-25T01:00:00',
+					url: 'http://www.salsanewyork.com/public/events/latin-mondays-at-taj.htm'
+				},
+				{
+					title  : 'Salsa on 2\'sdays - Rooftop party @ the Copacabana',
+					start  : '2018-09-04T21:00:00',
+					end  : '2018-09-05T02:00:00',
+					url: 'http://www.salsanewyork.com/events/salsa-on-2\'sdays-at-copa.htm'
+				},
+				{
+					title  : 'Salsa on 2\'sdays - Rooftop party @ the Copacabana',
+					start  : '2018-09-11T21:00:00',
+					end  : '2018-09-12T02:00:00',
+					url: 'http://www.salsanewyork.com/events/salsa-on-2\'sdays-at-copa.htm'
+				},
+				{
+					title  : 'Salsa on 2\'sdays - Rooftop party @ the Copacabana',
+					start  : '2018-09-18T21:00:00',
+					end  : '2018-09-19T02:00:00',
+					url: 'http://www.salsanewyork.com/events/salsa-on-2\'sdays-at-copa.htm'
+				},
+				{
+					title  : 'Salsa on 2\'sdays - Rooftop party @ the Copacabana',
+					start  : '2018-09-25T21:00:00',
+					end  : '2018-09-26T02:00:00',
+					url: 'http://www.salsanewyork.com/events/salsa-on-2\'sdays-at-copa.htm'
 				},
 				{
 					title  : 'Baila Wednesdays @ Solas',
-					start  : '2018-08-22T18:00:00',
-					end  : '2018-08-22T20:00:00'
+					start  : '2018-09-05T20:00:00',
+					end  : '2018-09-06T01:00:00',
+					url: 'http://www.salsanewyork.com/events/baila-wednesdays-at-solas.htm'
 				},
 				{
-					title  : 'Summer outdoor salsa @ downtown Brooklyn',
-					start  : '2018-08-23T17:00:00',
-					end  : '2018-08-23T19:00:00'
+					title  : 'Baila Wednesdays @ Solas',
+					start  : '2018-09-12T20:00:00',
+					end  : '2018-09-13T01:00:00',
+					url: 'http://www.salsanewyork.com/events/baila-wednesdays-at-solas.htm'
 				},
 				{
-					title  : 'An evening with Abakua',
-					start  : '2018-08-24T22:00:00',
-					end  : '2018-08-24T2:00:00'
+					title  : 'Baila Wednesdays @ Solas',
+					start  : '2018-09-19T20:00:00',
+					end  : '2018-09-20T01:00:00',
+					url: 'http://www.salsanewyork.com/events/baila-wednesdays-at-solas.htm'
 				},
 				{
-					title  : 'Salsamania Saturdays @ dancesport studios.',
-					start  : '2018-08-25T17:00:00',
-					end  : '2018-08-25T19:00:00'
+					title  : 'Baila Wednesdays @ Solas',
+					start  : '2018-09-26T20:00:00',
+					end  : '2018-09-27T01:00:00',
+					url: 'http://www.salsanewyork.com/events/baila-wednesdays-at-solas.htm'
 				},
-			];
-
-	let thuFriSatSun = [
 				// Thursday
 				{
 					title  : 'Summer outdoor salsa @ Downtown Brooklyn.',
@@ -301,8 +342,7 @@ $(document).ready(function() {
 				listWeek: 'list week',
 				listDay: 'list day'
 			},
-			//events: allEvents
-			events: thuFriSatSun,
+			events: allEvents,
 			eventClick: function(event) {
 			    if (event.url) {
 			      window.open(event.url);
