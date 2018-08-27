@@ -33,12 +33,9 @@
     border: 1px solid var(--color-gray-dk);
     border-left: 3px solid var(--color-blue);
     color: #666;
-    transition: border-width 0.2s ease-in-out;
     padding: 8px 5px;
 }
 .fc-month-view .fc-event:hover {
-    border: 1px solid var(--color-gray-dk);
-    border-left: 4px solid var(--color-blue);
     color: #666;
 }
 #calendar .fc-today-button {
