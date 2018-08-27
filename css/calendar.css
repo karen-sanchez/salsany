@@ -38,10 +38,19 @@
 .fc-month-view .fc-event:hover {
     color: #666;
 }
+
 #calendar .fc-today-button {
     font-size: 12px;
     padding: 10px;
     text-transform: uppercase;
+}
+#calendar .fc-month-view th {
+    font-weight: normal;
+    text-align: left;
+    padding-left: 5px;
+}
+#calendar .fc-month-view .fc-day-number {
+    float: left;
 }
 
 
@@ -58,7 +67,6 @@ a.cancelled.fc-event::after {
     text-transform: uppercase;
     color: var(--color-red);
     display: block;
-    padding-left: 20px;
     font-size: 11px;
     font-weight: bold;
 }
