@@ -575,9 +575,9 @@ $(document).ready(function() {
 
 	$('#calendar').fullCalendar({
 			header: {
-				left: 'today prev',
-				center: 'title',
-				right: $(window).width() < 765 ? 'next month,listWeek,listDay':'next month,agendaWeek,agendaDay'
+				left: 'title',
+				center: '',
+				right: $(window).width() < 765 ? 'prev next month,listWeek,listDay':'today prev next'
 			},
 			buttonText: {
 				listWeek: 'list week',
