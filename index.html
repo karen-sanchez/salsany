@@ -59,28 +59,18 @@
 </head>
 <body>
 	<nav class="navbar navbar-expand-md navbar-dark sny-flex-col">
-		<img class="sny-logo" src="images/salsanewyork-logo.svg" height="36" width="390" alt="Salsa New York Calendar Logo" />
+		<img class="sny-logo img-fluid" src="images/salsanewyork-logo.svg" height="36" width="390" alt="Salsa New York Calendar Logo" />
 		<h1 class="sny-hide">Salsa New York Calendar</h1>
-        <h2 class="mx-auto">A website about New York Style Mambo Dancing "Breaking On 2"</h2>
+		<h2 class="text-center">A website about New York Style Mambo Dancing "Breaking On 2"</h2>
 	</nav>
-	<div class="mt-4 mb-4 mr-4 ml-4 sny-mh450">
+	<div class="mt-4 mb-4 mr-3 ml-3 sny-mh450">
 		<h3>Calendar of New York City <br> Metro Area Salsa Dancing Events</h3>
 		<div id='calendar' class="sny-hide"></div>
 	</div>
 	<div class="mt-4 mb-4 mr-4 ml-4">
-		<div class="jumbotron mt-5 suggestion-box">
-			<div class="container">
-				<div class="card-deck mb-3 text-center">
-					<div class="card mb-4 shadow-sm">
-						<h4 class="my-0 font-weight-normal">Do you have any suggestions to help us improve our website?</h4>
-						<div class="card-body">
-							<a href="https://docs.google.com/forms/d/e/1FAIpQLSelUM_HPodPjefy7UlPylZkNAzO5CdUVW9aoppQUmiXhaD3EA/viewform?usp=sf_link" target=_blank"">
-								<button type="button" class="btn btn-lg btn-primary">Tell us about it!</button>
-							</a>
-						</div>
-					</div>
-				</div>
-			</div>
+		<div class="jumbotron col-md-5 p-lg-5 mx-auto my-5">
+			<p class="lead font-weight-normal">Do you have any suggestions to help us improve our website?</p>
+			<a class="btn btn-outline-custom" href="https://docs.google.com/forms/d/e/1FAIpQLSelUM_HPodPjefy7UlPylZkNAzO5CdUVW9aoppQUmiXhaD3EA/viewform?usp=sf_link" target=_blank"">Tell us about it!</a>
 		</div>
 	</div>
 
@@ -106,21 +96,21 @@
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-124578594-1"></script>
 	<script>
-	  window.dataLayer = window.dataLayer || [];
-	  function gtag(){dataLayer.push(arguments);}
-	  gtag('js', new Date());
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
 
-	  gtag('config', 'UA-124578594-1');
+		gtag('config', 'UA-124578594-1');
 	</script>
 
 	<!-- Todo: move this to PHP or something like that -->
 	<!-- <script type='text/javascript' data-cfasync='false'>
 
-	    var link = document.createElement('link');
-	    link.type = 'image/x-icon';
-	    link.rel = 'shortcut icon';
-	    link.href = 'https://calendar.google.com/googlecalendar/images/favicon_v2014_'+new Date().getDate()+'.ico';
-	    document.getElementsByTagName('head')[0].appendChild(link);
+		var link = document.createElement('link');
+		link.type = 'image/x-icon';
+		link.rel = 'shortcut icon';
+		link.href = 'https://calendar.google.com/googlecalendar/images/favicon_v2014_'+new Date().getDate()+'.ico';
+		document.getElementsByTagName('head')[0].appendChild(link);
 
 	</script> -->
 

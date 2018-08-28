@@ -573,31 +573,62 @@ $(document).ready(function() {
 				},
 			];
 
-	$('#calendar').fullCalendar({
-			header: {
+	let options = {
+		header: {
+			left: 'title',
+			center: '',
+			right: 'today prev next'
+		},
+		defaultView: 'month',
+		buttonText: {
+			listMonth: 'month',
+			listWeek: 'week',
+			listDay: 'day'
+		},
+		events: allEvents,
+		eventClick: function(event) {
+			if (event.url) {
+				window.open(event.url);
+			return false;
+		}
+		},
+		eventRender: function(event, $el) {
+			if (event.cancelled) {
+				$el.addClass("cancelled");	
+				console.log($el)
+			}
+		},
+		eventAfterAllRender: function(){
+			$("#calendar").fadeIn("slow");
+			console.log("done");
+		}
+	};
+
+	let $fc = $("#calendar").fullCalendar(options);
+
+	function recreateFC(screenWidth) {
+		if (screenWidth < 700) {
+			options.header = {
+				left: 'title',
+				center: 'listMonth, listWeek, listDay, prev, next',
+				right: 'today'
+			};
+			options.defaultView = 'listMonth';
+		} else {
+			options.header = {
 				left: 'title',
 				center: '',
-				right: $(window).width() < 765 ? 'prev next month,listWeek,listDay':'today prev next'
-			},
-			buttonText: {
-				listWeek: 'list week',
-				listDay: 'list day'
-			},
-			events: allEvents,
-			eventClick: function(event) {
-			    if (event.url) {
-			      window.open(event.url);
-			      return false;
-			    }
-			},
-			eventRender: function(event, $el) {
-				if (event.cancelled) {
-					$el.addClass("cancelled");	
-				}
-		    },
-		     eventAfterAllRender: function(){
-		        $("#calendar").fadeIn("slow");
-		        console.log("done");
-		    }
+				right: 'today prev next'
+			};
+			options.defaultView = 'month';
+		}
+		$fc.fullCalendar('destroy');
+		$fc.fullCalendar(options);
+	}
+
+	$(window).resize(function () {
+		recreateFC($(window).width());
 	});
+
+	recreateFC($(window).width());
 });

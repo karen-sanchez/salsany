@@ -1,17 +1,26 @@
 button:focus {outline:0;}
+.btn-outline-custom {
+	color: var(--color-blue);
+	border-color: var(--color-blue);
+}
+.btn-outline-custom:hover {
+    color: #fff;
+    background-color: var(--color-blue);
+    border-color: var(--color-blue);
+}
 
 /* Fonts */
 body {
 	font-family: var(--default-font);
 }
 @font-face {
-    font-family: "Hobo";
-    src: url("../fonts/HoboStd.woff") format("woff")
+	font-family: "Hobo";
+	src: url("../fonts/HoboStd.woff") format("woff")
 }
 @font-face {
-    font-family: "Hobo";
-    src: url("../fonts/Hobo-Bold.woff") format("woff")
-    font-weight: bold;
+	font-family: "Hobo";
+	src: url("../fonts/Hobo-Bold.woff") format("woff")
+	font-weight: bold;
 }
 .sny-font-hobo {
 	font-family: "Hobo";
@@ -22,33 +31,31 @@ h2 {
 }
 h3 {
 	font-weight: bold;
-    text-transform: uppercase;
-    text-align: center;
-    font-size: 16px;
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 16px;
 }
 
 /* Components */
 .sny-logo {
 	margin: 5px auto;
+	/*width: 250px;*/
 }
 .sny-loader {
 	display: block;
-    width: 100%;
-    background: url(images/loader.gif) no-repeat center;
-    background-size: 300px;
-    position: absolute;
+	width: 100%;
+	background: url(images/loader.gif) no-repeat center;
+	background-size: 300px;
+	position: absolute;
 }
 .sny-mh450 {
-    min-height: 450px;
-}
-.suggestion-box .card.mb-4.shadow-sm {
-	padding: 3em;
+	min-height: 450px;
 }
 
 /* Spacing */
 .sny-flex-col {
 	display: flex;
-    flex-direction: column;
+	flex-direction: column;
 }
 .sny-hide {
 	display: none;

@@ -1,4 +1,3 @@
-
 /* Custom css for calendar */
 .fc-toolbar.fc-header-toolbar {
 	background: var(--color-blue);
@@ -12,47 +11,123 @@
 }
 .fc-header-toolbar .fc-button {
 	color: white;
-    border: 0;
-    background: none;
-    text-shadow: none;
+	border: 0;
+	background: none;
+	text-shadow: none;
 }
 .fc-time {
 	color: var(--color-blue);
-    font-weight: bold;
+	font-weight: bold;
 }
 .fc-content {
 	font-size: 12px;
 }
 .fc-month-view .fc-day-grid-event .fc-content {
 	height: 32px;
-    white-space: normal;
-    text-overflow: ellipsis;
+	white-space: normal;
+	text-overflow: ellipsis;
 }
 .fc-month-view .fc-event {
-    background: white;
-    border: 1px solid var(--color-gray-dk);
-    border-left: 3px solid var(--color-blue);
-    color: #666;
-    padding: 8px 5px;
+	background: white;
+	border: 1px solid var(--color-gray-dk);
+	border-left: 3px solid var(--color-blue);
+	color: #666;
+	padding: 8px 5px;
 }
 .fc-month-view .fc-event:hover {
-    color: #666;
+	color: #666;
+}
+.fc-event-dot {
+	display: none !important;
+}
+/* Mobile view header and buttons */
+@media (max-width: 700px) {
+	.fc-toolbar.fc-header-toolbar {
+		background: white;
+	}
+	.fc-toolbar.fc-header-toolbar .fc-right {
+		height: 3em;
+	}
+	.fc-toolbar button:focus {
+		background-color: var(--color-blue-focus);
+	}
+	.fc-list-item {
+		border: 1px solid var(--color-gray-dk);
+		border-left: 5px solid var(--color-blue);
+	}
+	.fc .fc-list-table {
+		margin-top: 1em;
+	}
+	.fc .fc-toolbar>*>* {
+		margin-left: 0px !important;
+		height: 3em;
+		float: none !important;
+		background-color: var(--color-blue);
+	}
+	.fc-prev-button {
+		background-color: var(--color-blue);
+		width: 49%;
+		margin: 0.3em 1px 0em 0em !important;
+	}
+	.fc-next-button {
+		background-color: var(--color-blue);
+		width: 49%;
+		margin: 0.3em 0em 0em 1px !important;
+	}
+	.fc-toolbar .fc-right {
+		background-color: var(--color-blue);
+		width: 50%;
+	}
+	.fc-toolbar .fc-left {
+		background-color: var(--color-blue);
+		width: 50%;
+	}
+	.fc-toolbar .fc-center {
+		display: block !important;
+	}
+	.fc-listMonth-button {
+		width: 98%;
+		margin: 1em 0em 0.3em 0em !important;
+	}
+	.fc-listWeek-button {
+		width: 98%;
+		margin: 0.3em 0em !important;
+	}
+	.fc-listDay-button {
+		width: 98%;
+		margin: 0.3em 0em !important;
+	}
+	/* Mobile view cancelled event */
+	.fc-list-item.fc-has-url.cancelled .fc-list-item-time,
+	.fc-list-item.fc-has-url.cancelled .fc-list-item-title {
+		color: var(--color-gray-dk);
+	}
+	.fc-list-item.fc-has-url.cancelled {
+		border-left: 5px solid var(--color-gray-dk);
+	}
+	.fc-list-item.fc-has-url.cancelled td:first-child::after {
+		content: 'cancelled';
+		text-transform: uppercase;
+		color: var(--color-red);
+		display: block;
+		font-size: 11px;
+		font-weight: bold;
+	}
 }
 
 #calendar .fc-today-button {
-    font-size: 12px;
-    padding: 10px;
-    text-transform: uppercase;
+	font-size: 12px;
+	padding: 10px;
+	text-transform: uppercase;
 }
 #calendar .fc-month-view th {
-    font-weight: normal;
-    text-align: left;
-    padding-left: 5px;
+	font-weight: normal;
+	text-align: left;
+	padding-left: 5px;
 }
 #calendar .fc-month-view .fc-day-number {
-    float: left;
+	float: left;
 }
-
 
 /* Cancelled event */
 a.cancelled .fc-time,
@@ -60,13 +135,15 @@ a.cancelled .fc-content {
 	color: var(--color-gray-dk);
 }
 a.cancelled.fc-event {
-    border-left: 3px solid var(--color-gray-dk);
+	border-left: 3px solid var(--color-gray-dk);
 }
 a.cancelled.fc-event::after {
-    content: 'cancelled';
-    text-transform: uppercase;
-    color: var(--color-red);
-    display: block;
-    font-size: 11px;
-    font-weight: bold;
+	content: 'cancelled';
+	text-transform: uppercase;
+	color: var(--color-red);
+	display: block;
+	font-size: 11px;
+	font-weight: bold;
 }
+
+
