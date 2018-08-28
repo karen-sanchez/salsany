@@ -3,12 +3,6 @@ $(document).ready(function() {
 	let allEvents = [
 				// Mon - Wed
 				{
-					title  : 'Orchard Beach Salsa Monday',
-					start  : '2018-09-03T13:00:00',
-					end  : '2018-09-03T17:00:00',
-					url: 'http://www.salsanewyork.com/events/orchard-beach-salsa-sundays.htm'
-				},
-				{
 					title  : 'Latin Mondays @ Taj' ,
 					start  : '2018-09-03T17:00:00',
 					end  : '2018-09-04T01:00:00',
@@ -115,7 +109,7 @@ $(document).ready(function() {
 					title  : 'Tumbao Thursdays @ Yayo\'s.',
 					start  : '2018-08-30T21:00:00',
 					end  : '2018-08-31T01:00:00',
-					url: 'http://www.salsanewyork.com/events/tumbao-thursdays-at-yayo\'s.htm/'
+					url: 'http://www.salsanewyork.com/events/tumbao-thursdays-at-yayo\'s.htm'
 				},
 				{
 					title  : 'Tumbao Thursdays @ Yayo\'s.',
@@ -246,31 +240,31 @@ $(document).ready(function() {
 				},
 				{
 					title  : 'Club Deportivo Salsa Fridays.',
-					start  : '2018-08-31T24:00:00',
+					start  : '2018-08-31T23:55:00',
 					end  : '2018-09-01T04:00:00',
 					url: 'http://www.salsanewyork.com/events/club-deportivo.htm'
 				},
 				{
 					title  : 'Club Deportivo Salsa Fridays.',
-					start  : '2018-09-07T24:00:00',
+					start  : '2018-09-07T23:55:00',
 					end  : '2018-09-08T04:00:00',
 					url: 'http://www.salsanewyork.com/events/club-deportivo.htm'
 				},
 				{
 					title  : 'Club Deportivo Salsa Fridays.',
-					start  : '2018-09-14T24:00:00',
+					start  : '2018-09-14T23:55:00',
 					end  : '2018-09-15T04:00:00',
 					url: 'http://www.salsanewyork.com/events/club-deportivo.htm'
 				},
 				{
 					title  : 'Club Deportivo Salsa Fridays.',
-					start  : '2018-09-21T24:00:00',
+					start  : '2018-09-21T23:55:00',
 					end  : '2018-09-22T04:00:00',
 					url: 'http://www.salsanewyork.com/events/club-deportivo.htm'
 				},
 				{
 					title  : 'Club Deportivo Salsa Fridays.',
-					start  : '2018-09-28T24:00:00',
+					start  : '2018-09-28T23:55:00',
 					end  : '2018-09-29T04:00:00',
 					url: 'http://www.salsanewyork.com/events/club-deportivo.htm'
 				},
@@ -492,12 +486,6 @@ $(document).ready(function() {
 					start  : '2018-09-30T18:00:00',
 					end  : '2018-09-30T22:00:00',
 					url: 'http://www.salsanewyork.com/events/latin-sundays-party-with-jimmy-anton.htm'
-				},
-				{
-					title  : 'Las Chicas Locas @ Dancesport.',
-					start  : '2018-09-02T21:30:00',
-					end  : '2018-09-03T02:00:00',
-					url: 'http://www.salsanewyork.com/events/las-chicas-locas.htm'
 				},
 				{
 					title  : 'Las Chicas Locas @ Dancesport.',
