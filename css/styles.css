@@ -1,3 +1,5 @@
+button:focus {outline:0;}
+
 /* Fonts */
 body {
 	font-family: var(--default-font);
@@ -6,8 +8,23 @@ body {
     font-family: "Hobo";
     src: url("../fonts/HoboStd.woff") format("woff")
 }
+@font-face {
+    font-family: "Hobo";
+    src: url("../fonts/Hobo-Bold.woff") format("woff")
+    font-weight: bold;
+}
 .sny-font-hobo {
 	font-family: "Hobo";
+}
+h2 {
+	font-size: 16px;
+	padding: 10px;
+}
+h3 {
+	font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 16px;
 }
 
 /* Components */
@@ -24,10 +41,15 @@ body {
 .sny-mh450 {
     min-height: 450px;
 }
-#calendar {
-	/* For smooth transition after render */
-	display:none;
-}
 .suggestion-box .card.mb-4.shadow-sm {
 	padding: 3em;
+}
+
+/* Spacing */
+.sny-flex-col {
+	display: flex;
+    flex-direction: column;
+}
+.sny-hide {
+	display: none;
 }
