@@ -561,6 +561,17 @@ $(document).ready(function() {
 				},
 			];
 
+	var $calendar = $('#calendar');
+	var stickyHeaderTop = 180;
+	var scrollHandler = function() {
+		toolbarEl = $('.fc-toolbar.fc-header-toolbar');
+	    if ($(window).scrollTop() > stickyHeaderTop) {
+	        toolbarEl.addClass('sny-fixed-top');
+	    }
+	    else {
+	        toolbarEl.removeClass('sny-fixed-top');
+	    }  
+	};
 	let options = {
 		header: {
 			left: 'title',
@@ -585,36 +596,35 @@ $(document).ready(function() {
 				$el.addClass("cancelled");	
 			}
 		},
-		eventAfterAllRender: function(){
-			$("#calendar").fadeIn("slow");
-			var $header = $('.fc-toolbar.fc-header-toolbar');
-			var stickyheader = $header.offset().top;
-			$(window).scroll(function() {  
-			    if ($(window).scrollTop() > stickyheader) {
-			        $header.addClass('sny-fixed-top');
-			    }
-			    else {
-			        $header.removeClass('sny-fixed-top');
-			    }  
-			});
+		eventAfterAllRender: function() {
+			$calendar.fadeIn("slow");
+			$(window).off("scroll", scrollHandler);
+			$(window).scroll(scrollHandler);
 		}
 	};
 
 	let $fc = $("#calendar").fullCalendar(options);
+	let currentScreenWidth = 0;
 
+	function isMobile (size) {
+		return size<700;
+	}
 	function recreateFC(screenWidth) {
-		if (screenWidth < 700) {
-			options.defaultView = 'listWeek';
-		} else {
-			options.defaultView = 'month';
-		}
+		options.defaultView = isMobile(screenWidth)?'listWeek':'month';
 		$fc.fullCalendar('destroy');
 		$fc.fullCalendar(options);
 	}
 
-	// $(window).resize(function () {
-	// 	recreateFC($(window).width());
-	// });
+	var lastWindowWidth=$(window).width();
+	$(window).resize(function () {
+		var $window = $(this),
+        windowWidth = $window.width();
 
-	recreateFC($(window).width());
+        // ignore if there is no switch mobile <-> desktop
+        if(isMobile(lastWindowWidth) && isMobile(windowWidth)) return;
+        if(!isMobile(lastWindowWidth) && !isMobile(windowWidth)) return;
+        
+		recreateFC(windowWidth);
+        lastWindowWidth = windowWidth;
+	});
 });
