@@ -565,12 +565,12 @@ $(document).ready(function() {
 	var stickyHeaderTop = 180;
 	var scrollHandler = function() {
 		toolbarEl = $('.fc-toolbar.fc-header-toolbar');
-	    if ($(window).scrollTop() > stickyHeaderTop) {
-	        toolbarEl.addClass('sny-fixed-top');
-	    }
-	    else {
-	        toolbarEl.removeClass('sny-fixed-top');
-	    }  
+		if ($(window).scrollTop() > stickyHeaderTop) {
+			toolbarEl.addClass('sny-fixed-top');
+		}
+		else {
+			toolbarEl.removeClass('sny-fixed-top');
+		}  
 	};
 	let options = {
 		header: {
@@ -607,24 +607,26 @@ $(document).ready(function() {
 	let currentScreenWidth = 0;
 
 	function isMobile (size) {
-		return size<700;
+		return size < 700;
 	}
 	function recreateFC(screenWidth) {
-		options.defaultView = isMobile(screenWidth)?'listWeek':'month';
+		options.defaultView = isMobile(screenWidth) ? 'listWeek':'month';
 		$fc.fullCalendar('destroy');
 		$fc.fullCalendar(options);
 	}
 
-	var lastWindowWidth=$(window).width();
+	recreateFC($(window).width());
+
+	var lastWindowWidth = $(window).width();
 	$(window).resize(function () {
 		var $window = $(this),
-        windowWidth = $window.width();
+		windowWidth = $window.width();
 
-        // ignore if there is no switch mobile <-> desktop
-        if(isMobile(lastWindowWidth) && isMobile(windowWidth)) return;
-        if(!isMobile(lastWindowWidth) && !isMobile(windowWidth)) return;
-        
+		// ignore if there is no switch mobile <-> desktop
+		if(isMobile(lastWindowWidth) && isMobile(windowWidth)) return;
+		if(!isMobile(lastWindowWidth) && !isMobile(windowWidth)) return;
+
 		recreateFC(windowWidth);
-        lastWindowWidth = windowWidth;
+		lastWindowWidth = windowWidth;
 	});
 });
