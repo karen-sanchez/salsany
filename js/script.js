@@ -583,12 +583,20 @@ $(document).ready(function() {
 		eventRender: function(event, $el) {
 			if (event.cancelled) {
 				$el.addClass("cancelled");	
-				console.log($el)
 			}
 		},
 		eventAfterAllRender: function(){
 			$("#calendar").fadeIn("slow");
-			console.log("done");
+			var $header = $('.fc-toolbar.fc-header-toolbar');
+			var stickyheader = $header.offset().top;
+			$(window).scroll(function() {  
+			    if ($(window).scrollTop() > stickyheader) {
+			        $header.addClass('sny-fixed-top');
+			    }
+			    else {
+			        $header.removeClass('sny-fixed-top');
+			    }  
+			});
 		}
 	};
 
@@ -598,15 +606,15 @@ $(document).ready(function() {
 		if (screenWidth < 700) {
 			options.header = {
 				left: 'title',
-				center: 'listMonth, listWeek, listDay, prev, next',
-				right: 'today'
+				center: '',
+				right: 'prev today next'
 			};
-			options.defaultView = 'listMonth';
+			options.defaultView = 'listWeek';
 		} else {
 			options.header = {
 				left: 'title',
 				center: '',
-				right: 'today prev next'
+				right: 'prev today next'
 			};
 			options.defaultView = 'month';
 		}
