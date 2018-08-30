@@ -565,7 +565,7 @@ $(document).ready(function() {
 		header: {
 			left: 'title',
 			center: '',
-			right: 'today prev next'
+			right: 'prev today next'
 		},
 		defaultView: 'month',
 		buttonText: {
@@ -604,27 +604,17 @@ $(document).ready(function() {
 
 	function recreateFC(screenWidth) {
 		if (screenWidth < 700) {
-			options.header = {
-				left: 'title',
-				center: '',
-				right: 'prev today next'
-			};
 			options.defaultView = 'listWeek';
 		} else {
-			options.header = {
-				left: 'title',
-				center: '',
-				right: 'prev today next'
-			};
 			options.defaultView = 'month';
 		}
 		$fc.fullCalendar('destroy');
 		$fc.fullCalendar(options);
 	}
 
-	$(window).resize(function () {
-		recreateFC($(window).width());
-	});
+	// $(window).resize(function () {
+	// 	recreateFC($(window).width());
+	// });
 
 	recreateFC($(window).width());
 });

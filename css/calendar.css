@@ -101,9 +101,8 @@ a.cancelled.fc-event::after {
 	font-weight: bold;
 }
 
-
 .fc-scroller {
-  /* */
-  overflow: visible !important;
-  height: auto !important; }
+	overflow: visible !important;
+	height: auto !important; 
+}
 
