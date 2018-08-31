@@ -40,6 +40,14 @@
 .fc-event-dot {
 	display: none !important;
 }
+.fc-today .fc-day-number {
+	color: var(--color-blue);
+	font-weight: bold;
+}
+.fc-day-number {
+	margin-left: 4px;
+}
+
 /* Mobile view header and buttons */
 @media (max-width: 700px) {
 	.fc-toolbar button:focus {
