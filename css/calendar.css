@@ -40,6 +40,14 @@
 .fc-event-dot {
 	display: none !important;
 }
+.fc-today .fc-day-number {
+	color: var(--color-blue);
+	font-weight: bold;
+}
+.fc-day-number {
+	margin-left: 4px;
+}
+
 /* Mobile view header and buttons */
 @media (max-width: 700px) {
 	.fc-toolbar button:focus {
@@ -47,10 +55,12 @@
 	}
 	.fc-list-item {
 		border: 1px solid var(--color-gray-dk);
-		border-left: 5px solid var(--color-blue);
+		border-left: 8px solid var(--color-blue);
 	}
 	.fc .fc-list-table {
-		margin-top: 1em;
+		margin-top: 1em;    
+		overflow: hidden;
+    	display: block;
 	}
 	/* Mobile view cancelled event */
 	.fc-list-item.fc-has-url.cancelled .fc-list-item-time,
@@ -58,7 +68,7 @@
 		color: var(--color-gray-dk);
 	}
 	.fc-list-item.fc-has-url.cancelled {
-		border-left: 5px solid var(--color-gray-dk);
+		border-left: 8px solid var(--color-gray-dk);
 	}
 	.fc-list-item.fc-has-url.cancelled td:first-child::after {
 		content: 'cancelled';
