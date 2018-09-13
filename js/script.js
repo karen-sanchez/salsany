@@ -410,18 +410,6 @@ $(document).ready(function() {
 					url: 'http://www.salsanewyork.com/events/salsamania-saturdays.htm'
 				},
 				{
-					title  : 'Piel Canela Salsa Dance Social.',
-					start  : '2018-09-08T19:00:00',
-					end  : '2018-09-08T23:00:00',
-					url: 'http://www.salsanewyork.com/events/piel-canela-salsa-dance-social.htm'
-				},
-				{
-					title  : 'Piel Canela Salsa Dance Social.',
-					start  : '2018-09-22T19:00:00',
-					end  : '2018-09-22T23:00:00',
-					url: 'http://www.salsanewyork.com/events/piel-canela-salsa-dance-social.htm'
-				},
-				{
 					title  : 'Salsa Union NYC @ Stepping Out Studios.',
 					start  : '2018-09-15T21:00:00',
 					end  : '2018-09-16T03:00:00',
